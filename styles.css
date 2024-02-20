@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+/* Estilos Generales*/
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Body */
+body
+{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./asset/img/img_back.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/* Container*/
+.container
+{
+    width: 700px;
+    min-height: 500px;
+    padding: 20px;
+    border-radius: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffffffe5;
+
+}
+
+h1
+{
+    margin: 20px;
+}
+
+/* Inpus */
+.inputs
+{
+    width: 80%;
+    display: grid;
+}
+
+label
+{
+    padding: 25px 0px 10px;
+}
+
+input
+{
+    padding: 10px 5px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    background-color: #eeeded;
+}
+
+#fecha
+{
+    width: 70%;
+}
+
+input:focus
+{
+    border: 1px solid #3b3bbb;
+}
+
+/* Total de tareas*/
+#total
+{
+    color: #3b3bbb;
+    margin-top: 50px;
+}
+
+/* Button */
+button
+{
+    padding: 10px 15px;
+    margin-top: 40px;
+    color: #3b3bbb;
+    background-color: #fff;
+    border: 1px solid #3b3bbb;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover
+{
+    color: #fff;
+    background-color: #3b3bbb;
+}
+
+
+/* Lista de tareas */
+#lista_tareas
+{
+    width: 95%;
+    margin-top: 20px;
+}
+
+/* Tareas individuales */
+.tarea 
+{
+    width: 100%;
+    min-height: 70px;
+    font-size: 18px;
+    padding: 10px;
+    margin-top: 10px;
+    color: white;
+    background-color: #3b3bbb;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+/* Estilo para tarea completada */ 
+.tarea.completada 
+{
+    text-decoration: line-through;
+    background-color: black;
+    border: none;
+}
+  
+.tarea p 
+{
+    max-width: 350px;
+}
+
+  
+/* Iconos */  
+i 
+{
+    margin: 5px;
+    padding: 8px;
+    cursor: pointer;
+}
+  
+.icono-completar 
+{
+    color: #00ff00;
+}
+  
+.icono-eliminar 
+{
+    color: rgb(255, 255, 255);
+}
+  
+.icono-completar:hover,
+.icono-eliminar:hover 
+{
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.523);
+}

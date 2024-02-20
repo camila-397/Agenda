@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link rel="stylesheet" href="./styles.css">
+
+    <link rel="icon" href="./asset/icon/agenda.png">
+    <title>Agenda</title>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Agenda</h1>
+
+        <div class="inputs">
+
+            <label for="ingresar_tarea">Nombre de la tarea:</label>
+            <input type="text" id="ingresar_tarea" placeholder="Ingresa nombre">
+
+            <label for="fecha">Fecha limite:</label>
+            <input type="date" id="fecha">
+
+            <p id="total"></p>
+
+        </div>
+
+        <button type="submit">Crear Tarea</button>
+
+        <div id="lista_tareas">
+            <!-- Tareas -->
+        </div>
+
+    </div>
+
+
+    <script src="./app.js"></script>
+</body>
+</html>
